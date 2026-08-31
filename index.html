@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DP Game Bros — Small games. Big fun.</title>
+    <meta
+      name="description"
+      content="DP Game Bros — a collection of small browser games. Play Memory Car Lane and more."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="./index.html">
+        <span class="logo-badge">DP</span>
+        <span class="logo-text">Game&nbsp;Bros</span>
+      </a>
+      <nav class="site-nav">
+        <a href="#games">Games</a>
+        <a href="#about">About</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>Small games.<br /><span class="accent">Big fun.</span></h1>
+        <p>
+          A growing collection of handcrafted browser games by DP Game Bros —
+          no installs, no accounts. Just tap and play.
+        </p>
+        <a class="btn" href="#games">🎮 Play now</a>
+      </div>
+    </section>
+
+    <main>
+      <section id="games" class="games">
+        <h2>Games</h2>
+        <div id="game-grid" class="game-grid">
+          <!-- cards rendered from games.json -->
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <h2>About</h2>
+        <p>
+          DP Game Bros builds playful little browser games with big personality.
+          Every game is free, runs instantly in your browser, and works on both
+          desktop and mobile. New games drop regularly — check back soon!
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> DP Game Bros — made with 🎮 and too much coffee.</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
