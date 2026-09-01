@@ -15,6 +15,16 @@
       "players": "1 speler · mobiel vriendelijk"
     },
     {
+      "id": "frontline-run",
+      "title": "Frontline Run",
+      "tagline": "Last War-stijl: kies de juiste poorten, groei naar een mega-leger en houd de monsterhorde tegen.",
+      "emoji": "🪖",
+      "url": "games/frontline-run/",
+      "accent": "#a3e635",
+      "tags": ["arcade", "leger", "monsters"],
+      "players": "1 speler · slepen of pijltjestoetsen · mobiel vriendelijk"
+    },
+    {
       "id": "block-fusion",
       "title": "Block Fusion",
       "tagline": "Tetris met vuurwerk: rijen ontploffen, smelten, bevriezen of branden op.",

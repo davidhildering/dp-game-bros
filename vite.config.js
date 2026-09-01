@@ -14,6 +14,7 @@ export default defineConfig({
         main: r("index.html"),
         memoryCarLane: r("games/memory-car-lane/index.html"),
         blockFusion: r("games/block-fusion/index.html"),
+        frontlineRun: r("games/frontline-run/index.html"),
       },
     },
   },

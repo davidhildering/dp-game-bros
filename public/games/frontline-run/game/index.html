@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Frontline Run</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪖</text></svg>"
+    />
+    <script type="module" crossorigin src="./assets/index-Hm0vNjkN.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BYSS6Te8.css">
+  </head>
+  <body>
+    <div class="shell">
+      <header class="hud">
+        <div class="stat">
+          <span class="label">👥</span>
+          <span id="hud-count">5</span>
+        </div>
+        <div class="stat">
+          <span class="label">⚔</span>
+          <span id="hud-wave">1</span>
+        </div>
+        <div class="stat grow score">
+          <span class="label">Score</span>
+          <span id="hud-score">0</span>
+        </div>
+        <div class="stat dim">
+          <span class="label">Beste</span>
+          <span id="hud-best">0</span>
+        </div>
+      </header>
+
+      <main class="stage">
+        <div class="board">
+          <canvas id="game" width="420" height="740"></canvas>
+          <div id="overlay" class="overlay">
+            <div id="screen-menu" class="screen">
+              <h2>🪖 Frontline Run</h2>
+              <p class="tagline">
+                Kies de juiste poort, bouw een groot leger en houd de
+                monsterhorde tegen.
+              </p>
+              <div class="controls">
+                <div>🖱️ / 👆 &nbsp;sleep om je leger te bewegen</div>
+                <div><kbd>←</kbd><kbd>→</kbd><kbd>↑</kbd><kbd>↓</kbd> of WASD</div>
+                <div><kbd>P</kbd> pauze &nbsp; <kbd>M</kbd> geluid</div>
+              </div>
+              <div class="legend">
+                <div><span class="dot good"></span> Blauwe poort <b>+N / ×N</b> — meer soldaten</div>
+                <div><span class="dot bad"></span> Rode poort <b>−N / ÷N</b> — minder soldaten</div>
+                <div><span class="dot"></span> 🚀 raketten · ⚡ snelvuur · 💪 schade</div>
+              </div>
+              <button id="btn-start" class="btn">▶ Start</button>
+              <div id="menu-hiscores" class="hiscores"></div>
+            </div>
+
+            <div id="screen-pause" class="screen hidden">
+              <h2>⏸ Pauze</h2>
+              <button id="btn-resume" class="btn">▶ Verder</button>
+              <button id="btn-quit" class="btn ghost">⏹ Naar menu</button>
+            </div>
+
+            <div id="screen-over" class="screen hidden">
+              <h2>💀 Het leger is gevallen</h2>
+              <p class="final-score" id="final-score">0</p>
+              <p id="over-stats" class="over-stats"></p>
+              <div id="name-form" class="name-form hidden">
+                <input
+                  id="name-input"
+                  maxlength="14"
+                  placeholder="Jouw naam"
+                  autocomplete="off"
+                  spellcheck="false"
+                />
+                <button id="btn-save-score" class="btn small">💾 In de top 10</button>
+              </div>
+              <div id="over-hiscores" class="hiscores"></div>
+              <button id="btn-restart" class="btn">↻ Opnieuw</button>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="bar">
+        <button id="btn-pause" class="mini-btn" title="Pauze (P)">⏸</button>
+        <button id="btn-mute" class="mini-btn" title="Geluid (M)">🔊</button>
+        <span class="hint">Blauwe poort = groter leger · rood = kleiner</span>
+      </footer>
+    </div>
+
+  </body>
+</html>
