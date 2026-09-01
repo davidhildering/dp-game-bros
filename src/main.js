@@ -59,7 +59,7 @@ async function init() {
   soon.innerHTML = `
     <div class="cover">🕹️</div>
     <h3>Binnenkort</h3>
-    <p class="tagline">Nog een DP Game Bros original is in de maak…</p>
+    <p class="tagline">Nog een Game Bro original is in de maak…</p>
   `;
   grid?.appendChild(soon);
 }
