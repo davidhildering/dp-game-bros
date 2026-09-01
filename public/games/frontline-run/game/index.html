@@ -8,7 +8,7 @@
       rel="icon"
       href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪖</text></svg>"
     />
-    <script type="module" crossorigin src="./assets/index-Hm0vNjkN.js"></script>
+    <script type="module" crossorigin src="./assets/index-BmnwUnEW.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-BYSS6Te8.css">
   </head>
   <body>
@@ -21,6 +21,10 @@
         <div class="stat">
           <span class="label">⚔</span>
           <span id="hud-wave">1</span>
+        </div>
+        <div class="stat">
+          <span class="label">🎯</span>
+          <span id="hud-level">1</span>
         </div>
         <div class="stat grow score">
           <span class="label">Score</span>
@@ -62,6 +66,17 @@
               <button id="btn-quit" class="btn ghost">⏹ Naar menu</button>
             </div>
 
+            <div id="screen-levelcomplete" class="screen hidden">
+              <h2 id="lc-title">🏆 Level 1 voltooid!</h2>
+              <p id="lc-stats" class="over-stats"></p>
+              <p class="tagline">
+                60% van je leger marcheert met je mee — de volgende level is
+                zwaarder: meer monsters, sterkere boss.
+              </p>
+              <div id="lc-hiscores" class="hiscores"></div>
+              <button id="btn-next-level" class="btn">▶ Level 2</button>
+            </div>
+
             <div id="screen-over" class="screen hidden">
               <h2>💀 Het leger is gevallen</h2>
               <p class="final-score" id="final-score">0</p>
@@ -86,6 +101,7 @@
       <footer class="bar">
         <button id="btn-pause" class="mini-btn" title="Pauze (P)">⏸</button>
         <button id="btn-mute" class="mini-btn" title="Geluid (M)">🔊</button>
+        <button id="btn-fs" class="mini-btn" title="Volledig scherm">⛶</button>
         <span class="hint">Blauwe poort = groter leger · rood = kleiner</span>
       </footer>
     </div>
