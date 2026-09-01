@@ -1,18 +1,18 @@
 {
   "site": {
     "name": "DP Game Bros",
-    "tagline": "Small games. Big fun."
+    "tagline": "Kleine games. Groot plezier."
   },
   "games": [
     {
       "id": "memory-car-lane",
       "title": "Memory Car Lane",
-      "tagline": "Memorize the obstacles, draw your road, survive the drive.",
+      "tagline": "Onthoud de obstakels, teken je weg, overleef de rit.",
       "emoji": "🚗",
       "url": "games/memory-car-lane/",
       "accent": "#7fd8ff",
-      "tags": ["memory", "drawing", "arcade"],
-      "players": "1 player · mobile friendly"
+      "tags": ["geheugen", "tekenen", "arcade"],
+      "players": "1 speler · mobiel vriendelijk"
     }
   ]
 }

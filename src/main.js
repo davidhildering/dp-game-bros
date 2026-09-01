@@ -50,7 +50,7 @@ async function init() {
     console.error("Failed to load games.json", err);
     if (grid)
       grid.innerHTML =
-        '<p style="color:var(--text-dim)">Could not load the game list. Sorry!</p>';
+        '<p style="color:var(--text-dim)">Kon de spelijst niet laden. Sorry!</p>';
   }
 
   // "more coming soon" placeholder
@@ -58,8 +58,8 @@ async function init() {
   soon.className = "game-card soon";
   soon.innerHTML = `
     <div class="cover">🕹️</div>
-    <h3>Coming soon</h3>
-    <p class="tagline">Another DP Game Bros original is in the works…</p>
+    <h3>Binnenkort</h3>
+    <p class="tagline">Nog een DP Game Bros original is in de maak…</p>
   `;
   grid?.appendChild(soon);
 }
