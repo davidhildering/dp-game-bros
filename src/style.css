@@ -74,6 +74,17 @@ a {
   color: var(--text);
 }
 
+/* ---------- brothers line (onder de header) ---------- */
+
+.brothers {
+  margin: 0;
+  padding: 0 clamp(20px, 6vw, 72px);
+  text-align: center;
+  color: var(--gold);
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
 /* ---------- hero ---------- */
 
 .hero {
