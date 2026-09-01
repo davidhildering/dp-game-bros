@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Block Fusion — Game Bro</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💥</text></svg>"
+    />
+    <script type="module" crossorigin src="./assets/index-C8f1fznL.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-mEjL3rdm.css">
+  </head>
+  <body>
+    <div class="shell">
+      <!-- Linkerpaneel -->
+      <aside class="panel panel-left">
+        <h1 class="title">BLOCK<br /><span>FUSION</span></h1>
+        <div class="stat">
+          <span class="stat-label">Score</span>
+          <span class="stat-value" id="score">0</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Beste</span>
+          <span class="stat-value dim" id="best">0</span>
+        </div>
+        <div class="stat-row">
+          <div class="stat small">
+            <span class="stat-label">Level</span>
+            <span class="stat-value" id="level">1</span>
+          </div>
+          <div class="stat small">
+            <span class="stat-label">Rijen</span>
+            <span class="stat-value" id="lines">0</span>
+          </div>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Combo</span>
+          <span class="stat-value combo" id="combo">—</span>
+        </div>
+      </aside>
+
+      <!-- Speelveld -->
+      <main class="stage">
+        <canvas id="board" width="320" height="640"></canvas>
+        <div id="overlay" class="overlay">
+          <div id="screen-menu" class="screen">
+            <h2>💥 Block Fusion</h2>
+            <p class="tagline">Tetris met vuurwerk: elke volle rij ontploft, smelt, bevriest of brandt op!</p>
+            <div class="controls">
+              <div><kbd>←</kbd><kbd>→</kbd> bewegen</div>
+              <div><kbd>↑</kbd> draaien</div>
+              <div><kbd>↓</kbd> sneller</div>
+              <div><kbd>space</kbd> harde drop</div>
+              <div><kbd>P</kbd> pauze &nbsp; <kbd>M</kbd> geluid</div>
+            </div>
+            <button id="btn-start" class="btn">▶ Start</button>
+          </div>
+          <div id="screen-pause" class="screen hidden">
+            <h2>⏸ Pauze</h2>
+            <button id="btn-resume" class="btn">▶ Verder</button>
+          </div>
+          <div id="screen-over" class="screen hidden">
+            <h2>Game over</h2>
+            <p class="final-score" id="final-score">0</p>
+            <p id="over-stats" class="over-stats"></p>
+            <div id="over-badges" class="over-badges"></div>
+            <button id="btn-restart" class="btn">↻ Opnieuw</button>
+          </div>
+        </div>
+        <div id="badge-toast" class="badge-toast hidden"></div>
+      </main>
+
+      <!-- Rechterpaneel -->
+      <aside class="panel panel-right">
+        <div class="stat">
+          <span class="stat-label">Volgende</span>
+          <canvas id="next" width="120" height="240"></canvas>
+        </div>
+        <div class="stat grow">
+          <span class="stat-label">Badges <span id="badge-count" class="badge-count"></span></span>
+          <div id="badge-grid" class="badge-grid"></div>
+        </div>
+        <button id="btn-mute" class="mini-btn" title="Geluid aan/uit (M)">🔊</button>
+      </aside>
+    </div>
+
+    <!-- Touch-besturing -->
+    <div class="touch-bar">
+      <button data-act="left" aria-label="Links">◀</button>
+      <button data-act="rotate" aria-label="Draaien">↻</button>
+      <button data-act="right" aria-label="Rechts">▶</button>
+      <button data-act="down" aria-label="Omlaag">▼</button>
+      <button data-act="drop" aria-label="Harde drop">⤓</button>
+    </div>
+
+  </body>
+</html>

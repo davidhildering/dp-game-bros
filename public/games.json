@@ -13,6 +13,16 @@
       "accent": "#7fd8ff",
       "tags": ["geheugen", "tekenen", "arcade"],
       "players": "1 speler · mobiel vriendelijk"
+    },
+    {
+      "id": "block-fusion",
+      "title": "Block Fusion",
+      "tagline": "Tetris met vuurwerk: rijen ontploffen, smelten, bevriezen of branden op.",
+      "emoji": "💥",
+      "url": "games/block-fusion/",
+      "accent": "#fb923c",
+      "tags": ["puzzle", "arcade", "combo's"],
+      "players": "1 speler · pijltjestoetsen · mobiel vriendelijk"
     }
   ]
 }

@@ -13,6 +13,7 @@ export default defineConfig({
       input: {
         main: r("index.html"),
         memoryCarLane: r("games/memory-car-lane/index.html"),
+        blockFusion: r("games/block-fusion/index.html"),
       },
     },
   },
